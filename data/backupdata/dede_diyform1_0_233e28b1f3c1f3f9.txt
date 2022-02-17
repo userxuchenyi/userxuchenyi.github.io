@@ -1,0 +1,4 @@
+INSERT INTO `dede_diyform1` VALUES('7','0','','','http://127.0.0.17/html/sb/ly/arc/29.html','','2021-07-27 18:04:38');
+INSERT INTO `dede_diyform1` VALUES('6','0','','','http://127.0.0.17/html/sb/ly/arc/29.html','','2021-07-27 18:04:38');
+INSERT INTO `dede_diyform1` VALUES('5','0','','','http://127.0.0.17/html/sb/ly/arc/29.html','','2021-07-27 18:04:38');
+INSERT INTO `dede_diyform1` VALUES('4','0','AB模板网','admin@adminbuy.cn','www.adminbuy.cn','留言测试','2021-07-27 18:06:27');

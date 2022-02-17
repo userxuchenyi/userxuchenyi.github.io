@@ -1,0 +1,32 @@
+<header class="header">
+  <div class="inner">
+    <div class="logo"> <a href="/" title="{dede:global.cfg_webname/}"><img src="/skin/images/logo.png" alt="{dede:global.cfg_webname/}"/></a> </div>
+    <div class="nav-btn">
+      <div class="btn"> <span></span> <span></span> <span></span> </div>
+      <i>菜单</i> </div>
+    <nav class="nav">
+      <div class="menu">
+        <ul>
+          <ul>
+            <li class="common"><a href="/" >首页</a></li>
+		{dede:channelartlist typeid="top"}
+            <li class="common"><a href="{dede:field.typeurl/}">{dede:field.typename/}</a>
+              <ul class="sub-nav">
+               {dede:channel type="son"} 
+                <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+               {/dede:channel}
+              </ul>
+            </li>
+		{/dede:channelartlist}
+          </ul>
+        </ul>
+      </div>
+    </nav>
+    <!--<div class="member"> <a href="">登陆</a> </div>-->
+    <div class="clear"></div>
+  </div>
+</header>
+<nav id="nav">
+  <div class="inner"></div>
+</nav>
+<div class="clear"></div>

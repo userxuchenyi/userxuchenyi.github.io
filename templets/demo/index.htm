@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="author" content="order by www.baisheng999.com demo1038"/>
+<link href="/skin/css/main.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/skin/js/html5-css3.js"></script>
+<![endif]-->
+<script src="/skin/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<link href="/skin/css/prettify.css" rel="stylesheet" type="text/css" />
+<script src="/skin/js/prettify.js" type="text/javascript"></script>
+<script src="/skin/js/common_tpl.js" type="text/javascript"></script>
+<script type="text/javascript" src="/skin/js/adminbuy.js"></script>
+<style>
+.pagelist .thislink{width:33px; height:34px; line-height:34px; background:red; display:inline-block; text-align:center; color:#FFF; font-weight:bold;}
+.pagelist a{width:33px; height:34px; line-height:34px; background:#FFF; display:inline-block; text-align:center; color:#000;}
+</style>
+</head>
+<body>
+{dede:include filename='head.htm'/}
+
+<div class="inner">
+  <div class="sub-header">
+    <div class="banner"> <img src="/skin/images/banner.jpg" alt="{dede:global.cfg_webname/}"/> </div>
+    <div class="personal">
+      <div class="avatar"> <img src="/skin/images/avatar.jpg" alt="{dede:global.cfg_webname/}"/> </div>
+      <div class="info">
+        <p>{dede:global.cfg_js/}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="inner container">
+<main class="main">
+ {dede:arclist row='15'}
+ <section class="section">
+    <h2><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">[field:fulltitle/]</a></h2>
+    <div class="left-thumbnail"> <a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank"><img src="[field:litpic/]" alt="[field:fulltitle/]"/></a> </div>
+
+    <div class="intro"> [field:description/]... </div>
+    <div class="intro-meta"> <span>日期：[field:pubdate function='strftime("%Y-%m-%d %H:%M:%S",@me)'/]</span> <span>人气：[field:click/] </span> <span class="readmore"><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">阅读全文</a></span> </div>
+    <div class="clear"></div>
+  </section>
+  {/dede:arclist}
+ </main>
+{dede:include filename='right.htm'/}
+{dede:include filename='footer.htm'/}
+</body>
+</html>

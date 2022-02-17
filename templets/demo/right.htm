@@ -1,0 +1,34 @@
+<aside class="sidebar">
+  <div class="widget" id="logsearch">
+    <form name="serch-form" action="/plus/search.php" method="post" class="forms">
+      <label class="forms-inline"> <span class="btn-group">
+        <input name="q" type="text" class="input-search width-70" required id="search-keyword" style="color:#ccc" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+        <button class="btn btn-round">Search</button>
+        </span> </label>
+    </form>
+  </div>
+  <section class="widget" id="hotlog">
+    <h3>热门文章</h3>
+    <ul>
+	{dede:arclist row='10' orderby='rand' titlelen='45' typeid='all'}
+      <li><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">[field:title/]</a></li>
+ {/dede:arclist}
+    </ul>
+  </section>
+  <section class="widget" id="newlog">
+    <h3>最新文章</h3>
+    <ul>
+	{dede:arclist row='10' orderby='pubdate' titlelen='45' typeid='all'}
+      <li><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+    </ul>
+  </section>
+  <section class="widget" id="blogtags">
+    <h3>标签</h3>
+    <ul>
+  {dede:tag row='30' sort='new' getall='1'} 
+  <a href="[field:link/]" title="[field:tag /]">[field:tag /]</a>
+  {/dede:tag}
+    </ul>
+  </section>
+</aside>

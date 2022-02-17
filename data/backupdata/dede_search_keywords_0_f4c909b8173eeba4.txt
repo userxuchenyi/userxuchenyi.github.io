@@ -1,0 +1,5 @@
+INSERT INTO `dede_search_keywords` VALUES('1','只是因为拥有想要守护的','只是因为拥有想要守护的 守护 想要 拥有 是因为','2','1','1518675042','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','不能撤回','不能撤回 不能 撤回','1','1','1518675048','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','在这里搜索...','在这里搜索... 在这里 搜索','1','0','1518677735','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','才看到更多的风景','才看到更多的风景 多的 看到 风景','1','1','1518677814','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','姑娘','姑娘','2','2','1627378689','0','0');

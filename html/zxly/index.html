@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>在线留言_(自适应手机版)响应式个人随笔博客织梦模板 心情日记个人博客网站模板下载 - AB模板网</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/skin/css/main.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/skin/js/html5-css3.js"></script>
+<![endif]-->
+<script src="/skin/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<link href="/skin/css/prettify.css" rel="stylesheet" type="text/css" />
+<script src="/skin/js/prettify.js" type="text/javascript"></script>
+<script src="/skin/js/common_tpl.js" type="text/javascript"></script>
+<script type="text/javascript" src="/skin/js/adminbuy.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="inner">
+    <div class="logo"> <a href="/" title="(自适应手机版)响应式个人随笔博客织梦模板 心情日记个人博客网站模板下载 - AB模板网"><img src="/skin/images/logo.png" alt="(自适应手机版)响应式个人随笔博客织梦模板 心情日记个人博客网站模板下载 - AB模板网"/></a> </div>
+    <div class="nav-btn">
+      <div class="btn"> <span></span> <span></span> <span></span> </div>
+      <i>菜单</i> </div>
+    <nav class="nav">
+      <div class="menu">
+        <ul>
+          <ul>
+            <li class="common"><a href="/" >首页</a></li>
+		<li class="common"><a href="/html/sb/">随笔</a>
+              <ul class="sub-nav">
+                
+                <li><a href="/html/sb/ly/">旅游</a></li>
+                
+                <li><a href="/html/sb/ms/">美食</a></li>
+               
+              </ul>
+            </li><li class="common"><a href="/html/rz/">日志</a>
+              <ul class="sub-nav">
+               
+              </ul>
+            </li><li class="common"><a href="/html/xq/">心情</a>
+              <ul class="sub-nav">
+               
+              </ul>
+            </li><li class="common"><a href="/html/zxly/">在线留言</a>
+              <ul class="sub-nav">
+               
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </nav>
+    <!--<div class="member"> <a href="">登陆</a> </div>-->
+    <div class="clear"></div>
+  </div>
+</header>
+<nav id="nav">
+  <div class="inner"></div>
+</nav>
+<div class="clear"></div>
+
+<div class="inner container">
+  <main class="main">
+    <article class="post">
+      <h1>在线留言</h1>
+      <div class="entry">
+        <p> 有问题请在此处留言！ </p>
+      </div>
+      <div id="comment-place">
+        <div class="comment-form" id="comment-post">
+          <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+            <input type="hidden" name="action" value="post" />
+            <input type="hidden" name="diyid" value="1" />
+            <input type="hidden" name="do" value="2" />
+            <p>
+              <label for="author">昵称：</label>
+              <input type="text" class="text" name="name" id="name">
+              <i class="must">必填</i> </p>
+            <p>
+              <label for="email">邮箱：</label>
+              <input type="text" class="text" name="email" id="email">
+              <i class="must">必填</i> </p>
+            <p>
+              <label for="url">网址：</label>
+              <input type="text" class="text" name="web">
+            </p>
+            <p>
+              <textarea name="comment" rows="10" tabindex="4" placeholder="留言内容"></textarea>
+            </p>
+            <input type="hidden" name="liuyanshijian" id="liuyanshijian" value="2021-07-27 18:04:49">
+            <input type="hidden" name="dede_fields" value="name,text;email,text;web,text;comment,multitext;liuyanshijian,text" />
+			<input type="hidden" name="dede_fieldshash" value="5c95ccd8cd37968c02371e61e79b3d94" />  
+            <p>
+              <input type="submit" class="submit" value="留言" id="tj" />
+          </form>
+        </div>
+      </div>
+      <script>
+	$(function(){
+		$('#tj').click(function(){
+			//alert(1)
+			if($('#name').val()==''){alert('请输入昵称！'); $("#name").focus(); return false;}
+			if ($("#email").val() == "") { alert("请输入电子邮箱!"); return false; } 
+			if (!$("#email").val().match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)) { alert("电子邮箱格式不正确"); $("#email").focus(); return false; } 
+		})
+	})
+</script>
+    </article>
+  </main>
+  
+<aside class="sidebar">
+  <div class="widget" id="logsearch">
+    <form name="serch-form" action="/plus/search.php" method="post" class="forms">
+      <label class="forms-inline"> <span class="btn-group">
+        <input name="q" type="text" class="input-search width-70" required id="search-keyword" style="color:#ccc" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+        <button class="btn btn-round">Search</button>
+        </span> </label>
+    </form>
+  </div>
+  <section class="widget" id="hotlog">
+    <h3>热门文章</h3>
+    <ul>
+	<li><a href="/html/rz/arc/12.html" title="笨蛋，我喜欢你啊！" target="_blank">笨蛋，我喜欢你啊！</a></li>
+<li><a href="/html/xq/arc/4.html" title="把烦恼写在沙滩上" target="_blank">把烦恼写在沙滩上</a></li>
+<li><a href="/html/rz/arc/17.html" title="留白" target="_blank">留白</a></li>
+<li><a href="/html/xq/arc/6.html" title="会变得永远只是人心而已" target="_blank">会变得永远只是人心而已</a></li>
+<li><a href="/html/xq/arc/5.html" title="无题" target="_blank">无题</a></li>
+<li><a href="/html/xq/arc/3.html" title="致我们回不去的十七岁" target="_blank">致我们回不去的十七岁</a></li>
+<li><a href="/html/xq/arc/11.html" title="象腿女孩" target="_blank">象腿女孩</a></li>
+<li><a href="/html/xq/arc/7.html" title="淡，是一种至美的境界" target="_blank">淡，是一种至美的境界</a></li>
+<li><a href="/html/sb/ms/arc/21.html" title="很感谢你能来，不遗憾你离开" target="_blank">很感谢你能来，不遗憾你离开</a></li>
+<li><a href="/html/sb/ms/arc/22.html" title="那段奋不顾身的日子，叫青春" target="_blank">那段奋不顾身的日子，叫青春</a></li>
+
+    </ul>
+  </section>
+  <section class="widget" id="newlog">
+    <h3>最新文章</h3>
+    <ul>
+	<li><a href="/html/sb/ly/arc/29.html" title="愿每个失恋的姑娘，都被时光温柔以待" target="_blank">愿每个失恋的姑娘，都被时光温柔以</a></li>
+<li><a href="/html/sb/ly/arc/28.html" title="这真是个孤独的世界" target="_blank">这真是个孤独的世界</a></li>
+<li><a href="/html/sb/ly/arc/27.html" title="用力地生活，只是因为拥有想要守护的人" target="_blank">用力地生活，只是因为拥有想要守护</a></li>
+<li><a href="/html/sb/ly/arc/26.html" title="你多走了弯路，才看到更多的风景" target="_blank">你多走了弯路，才看到更多的风景</a></li>
+<li><a href="/html/sb/ly/arc/25.html" title="怕什么困难无穷，进一寸有一寸的欢喜" target="_blank">怕什么困难无穷，进一寸有一寸的欢</a></li>
+<li><a href="/html/sb/ms/arc/24.html" title="喜欢你已超过两分钟，不能撤回" target="_blank">喜欢你已超过两分钟，不能撤回</a></li>
+<li><a href="/html/sb/ms/arc/23.html" title="以后我不在你身边，你都要过得好好的" target="_blank">以后我不在你身边，你都要过得好好</a></li>
+<li><a href="/html/sb/ms/arc/22.html" title="那段奋不顾身的日子，叫青春" target="_blank">那段奋不顾身的日子，叫青春</a></li>
+<li><a href="/html/sb/ms/arc/21.html" title="很感谢你能来，不遗憾你离开" target="_blank">很感谢你能来，不遗憾你离开</a></li>
+<li><a href="/html/rz/arc/20.html" title="就当是一次路过" target="_blank">就当是一次路过</a></li>
+
+    </ul>
+  </section>
+  <section class="widget" id="blogtags">
+    <h3>标签</h3>
+    <ul>
+   
+  <a href="/tags.php?/%E6%98%A8%E5%A4%A9/" title="昨天">昨天</a>
+   
+  <a href="/tags.php?/%E5%8F%AA/" title="只">只</a>
+   
+  <a href="/tags.php?/%E8%8B%A5/" title="若">若</a>
+   
+  <a href="/tags.php?/%E5%A2%A8/" title="墨">墨</a>
+   
+  <a href="/tags.php?/%E5%A7%91%E5%A8%98/" title="姑娘">姑娘</a>
+   
+  <a href="/tags.php?/%E6%96%B9%E7%B3%96/" title="方糖">方糖</a>
+   
+  <a href="/tags.php?/%E8%BF%9C%E7%9A%84/" title="远的">远的</a>
+   
+  <a href="/tags.php?/%E9%81%A5/" title="遥">遥</a>
+   
+  <a href="/tags.php?/%E8%A6%81%E4%BB%8E/" title="要从">要从</a>
+   
+  <a href="/tags.php?/%E6%95%85%E4%BA%8B/" title="故事">故事</a>
+   
+  <a href="/tags.php?/%E7%B1%B3%E9%A5%AD/" title="米饭">米饭</a>
+   
+  <a href="/tags.php?/%E5%88%86%E6%89%8B/" title="分手">分手</a>
+   
+  <a href="/tags.php?/%E5%A6%82/" title="如">如</a>
+   
+  <a href="/tags.php?/%E5%88%9D%E8%A7%81/" title="初见">初见</a>
+   
+  <a href="/tags.php?/%E7%A6%BB%E5%BC%80/" title="离开">离开</a>
+   
+  <a href="/tags.php?/%E9%81%97%E6%86%BE/" title="遗憾">遗憾</a>
+   
+  <a href="/tags.php?/%E4%B8%8D/" title="不">不</a>
+   
+  <a href="/tags.php?/%E6%9D%A5/" title="来">来</a>
+   
+  <a href="/tags.php?/%E4%BD%A0%E8%83%BD/" title="你能">你能</a>
+   
+  <a href="/tags.php?/%E6%84%9F%E8%B0%A2/" title="感谢">感谢</a>
+   
+  <a href="/tags.php?/%E5%BE%88/" title="很">很</a>
+   
+  <a href="/tags.php?/%E8%B7%AF%E8%BF%87/" title="路过">路过</a>
+   
+  <a href="/tags.php?/%E4%B8%80%E6%AC%A1/" title="一次">一次</a>
+   
+  <a href="/tags.php?/%E5%BD%93%E6%98%AF/" title="当是">当是</a>
+   
+  <a href="/tags.php?/%E5%B0%B1/" title="就">就</a>
+   
+  <a href="/tags.php?/%E8%AF%B4/" title="说">说</a>
+   
+  <a href="/tags.php?/%E5%BD%93%E9%9D%A2/" title="当面">当面</a>
+   
+  <a href="/tags.php?/%E8%AF%B7/" title="请">请</a>
+   
+  <a href="/tags.php?/%E8%BF%99%E4%B9%88/" title="这么">这么</a>
+   
+  <a href="/tags.php?/%E7%94%9F%E7%9A%84/" title="生的">生的</a>
+  
+    </ul>
+  </section>
+</aside>
+
+<div class="clear"></div>
+</div>
+<footer class="footer">
+  <div class="inner">
+    <div class="pageslist">
+      <ul>
+        <li><a href="http://weibo.com/" rel="nofollow" target="_blank" title="新浪微博">新浪微博</a></li>
+        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes" rel="nofollow" target="_blank" title="QQ联系">腾讯QQ</a></li>
+        <li class="qrcode"><a href="javascript:void(0);" title="微信公众号">微信公众号</a>
+          <div class="qrcode-img"> <img src="/skin/images/qrcode.png" alt="扫一扫关注我们"> </div>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright"> Copyright &copy; 2014-2021 人博客网站模板     </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+
+<div id="backtop"> <a href="javascript:void(0);"></a> </div>
+<script>prettyPrint();</script>
+</body>
+</html>
